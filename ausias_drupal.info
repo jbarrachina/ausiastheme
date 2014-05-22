@@ -13,9 +13,8 @@ regions[header] = Header
 regions[navigation] = Navigation
 regions[language_switcher] = Language Switcher
 regions[search_box] = Search Box
-regions[perfiles] = perfiles
 
-regions[main_carrusel] = Main: carrusel
+regions[main_carrusel] = Main: Carrusel
 regions[main_top] = Main: Top
 regions[main_upper] = Main: Upper
 

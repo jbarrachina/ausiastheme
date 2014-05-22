@@ -31,10 +31,10 @@
 <?php endif; ?>
   <!-- barra de accesos directos fija  -->
 
+<!-- /#logo -->
 
-<?php if ($page['perfiles']): ?>
-<div class="logo-perfiles">
-    <div id="perfiles" class="clearfix">
+<?php if ($page['navigation']): ?>
+    <div id="logo-navigation" class="clearfix logo-navigation">
             <div class="row">
              <div class="col-md-3">
                  <?php if ($logo): ?>
@@ -43,31 +43,26 @@
              </div>
                 
              <div class="col-md-9">   
-                     <?php if ($page['perfiles']): ?>
-                         <div id="perfiles" class="perfiles"> <?php print render($page['perfiles']); ?></div>
+                     <?php if ($page['navigation']): ?>
+                         <div id="navigation" class="perfiles"> <?php print render($page['navigation']); ?></div>
                      <?php endif; ?> 
              </div>
             </div>
-    </div>
-</div>    
+    </div>   
 <?php endif; ?>
 
-<!-- /#logo -->
-<!-- carrusel y perfiles -->
-<?php if (($page['main_carrusel']) && ($is_front)): ?>
-    <div id="banner" class="clearfix banner" role="banner">
+<!-- carrusel -->
+<?php if ($page['main_carrusel']): ?>
+    <div id="carrusel" class="clearfix banner" role="banner">
             <div class="row">
                 <div class="col-md-12">
-                    <?php if ($page['main_carrusel']): ?>
-                        <div id="carrusel" class="row-fluid carrusel"><?php print render($page['main_carrusel']); ?></div>
+                        <div id="main_carrusel" class="row-fluid carrusel"><?php print render($page['main_carrusel']); ?></div>
                         <!-- /#header-content -->
-                     <?php endif; ?>    
                 </div>
-   
             </div>
     </div>
 <?php endif; ?>
-  <!-- carrusel y perfiles  -->    
+<!-- carrusel  -->    
 
 <div id="main" class="clearfix main" role="main">
     
