@@ -1,0 +1,92 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+
+/* ----- header region --------------- */
+.header { padding-top:0px; background-color: black;color: white; position:fixed;z-index: 10;width:100%;}
+.header-content { clear:both; }
+.header .nav > li > a {padding: 0px;color:white;}
+/* menu-fijo */
+.header-content .block-menu > ul > li {float: left; padding-left: 15px;}
+.header-content .block-menu > div > ul > li > a:hover {background:darkgray;}
+/* language switcher */
+ul.language-switcher-locale-url {list-style: none;margin-bottom: 0px;padding-right: 10px;  }
+ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom: 1px;}
+
+/* ----- sobre carrusel ---- */
+.banner {
+    padding-top: 25px;
+    z-index: 9;
+    width:100%;
+}
+
+/* ----menu perfiles----- */
+
+.perfiles ul.menu{
+        background-color:#BE1622; 
+}
+
+.perfiles ul.menu > li.leaf{
+    float: left;
+}
+
+.perfiles ul.menu > li.leaf:hover{
+    opacity: 0.75;
+    color:white;
+    
+}
+
+.perfiles ul.menu > li.leaf > a{
+    color: whitesmoke;
+    text-align: right;
+    font-size:140%; 
+    padding-top: 55px;
+}
+
+#sidebar-first .nav > li > a {
+    color:#BE1622;
+}
+
+#sidebar-first .nav > li > a {
+    color:#BE1622;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #BE1622;
+}
+
+#sidebar-first .nav > li > a:hover {
+    background-color: #DDD;}
+
+.nav > li > a:hover {
+    background-color: #BE1622;
+}
+
+.logo-perfiles{
+    padding-top: 23px;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    background-color:#BE1622; 
+    opacity: 0.85;
+}
+
+#main-content{
+    padding-top: 120px;
+}
+
+#main-content-frontpage{
+    padding-top: 20px;
+}
+
+
+#block-views-cuadrado-block h2 {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    color: #FFF;
+    padding: 0px 18px;
+    border-radius: 3px;
+    background-color: #383838;
+    right: 50%;
+}
