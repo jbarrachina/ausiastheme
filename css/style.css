@@ -3,10 +3,22 @@
  * remove this comment and start adding your styles to this file.
  */
 
+/*cuerpo de la página*/
+body.page-node-{
+    background-color: #BE1622;
+    background-image: url('../images/fondo-entrada-gris.jpg');
+    background-size: cover;
+}
+
+#main-content .row{
+    background-color: white;
+}
+
 /* ----- header region --------------- */
 .header { padding-top:0px; background-color: black;color: white; position:fixed;z-index: 10;width:100%;}
 .header-content { clear:both; }
 .header .nav > li > a {padding: 0px;color:white;}
+.header .nav > li > a:hover {padding: 0px;color:lightgray; background-color: black;}
 /* menu-fijo */
 .header-content .block-menu > ul > li {float: left; padding-left: 15px;}
 .header-content .block-menu > div > ul > li > a:hover {background:darkgray;}
@@ -58,7 +70,7 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
 #sidebar-first .nav > li > a:hover {
     background-color: #DDD;}
 
-.nav > li > a:hover {
+.perfiles .nav > li > a:hover {
     background-color: #BE1622;
 }
 
