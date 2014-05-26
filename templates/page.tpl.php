@@ -68,13 +68,19 @@
     
     <div class="container">
         <?php if (!($is_front) && ($breadcrumb)): ?>
+          <div class="row">
             <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+          </div>
         <?php endif; ?>
         <?php if ($page['main_top']): ?>
+          <div class="row">
             <div id="main-top" class="row-fluid main-top"> <?php print render($page['main_top']); ?> </div>
+          </div>
         <?php endif; ?>
         <?php if ($page['main_upper']): ?>
+          <div class="row">
             <div id="main-upper" class="row-fluid main-upper"> <?php print render($page['main_upper']); ?> </div>
+          </div>  
         <?php endif; ?>
         <div id="main-content<?php if (($is_front)): print '-frontpage'; 
                               endif; ?>" class="main-content">

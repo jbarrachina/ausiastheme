@@ -56,6 +56,10 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
     padding-top: 55px;
 }
 
+.region-sidebar-first{
+    margin-top: 15px;
+}
+
 #sidebar-first .nav > li > a {
     color:#BE1622;
 }
@@ -84,9 +88,23 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
 }
 
 #main-content{
-    padding-top: 120px;
+    padding-top: 0px;
 }
 
+ol.breadcrumb{
+    margin-top: 130px;
+    background-color: initial;
+    float:right;
+}
+
+ol.breadcrumb li a{
+    color:#BE1622;
+}
+
+.breadcrumb > .active {
+    color:#BE1622;
+    font-weight: bold;
+}
 #main-content-frontpage{
     padding-top: 20px;
 }
