@@ -109,6 +109,34 @@ ol.breadcrumb li a{
     padding-top: 20px;
 }
 
+.main-top{
+font-size: 12px;
+width: 130px;
+position: fixed;
+right: 0px;
+top: 185px;
+z-index: 35;
+transition: right 0.15s ease-out 0s;
+}
+
+.main-top a {
+    width:100px;
+    height: 55px;
+    line-height: 51px;
+    color: whitesmoke;
+    display: block;
+    background: url('images/pestanya2.png') no-repeat scroll 0px -58px transparent;
+    margin-bottom: 4px;
+    padding-left: 22px;
+    float: right;
+    transition: width 0.2s ease-out 0s;
+}
+
+.main-top a:hover {
+    background-position: 0px 0px;
+    width: 130px;
+    text-decoration: none;
+}
 
 #block-views-cuadrado-block h2 {
     display: block;
