@@ -4,20 +4,42 @@
  */
 
 /*cuerpo de la página*/
+body {
+    font-size: 20px;
+}
+
+
 body.page-node-{
     background-color: #BE1622;
     background-image: url('../images/fondo-entrada-gris.jpg');
     background-size: cover;
 }
 
+body.Alumnado {
+    background-image: url('images/morado.jpg');
+}
+
+body.page-root-perfiles{
+    color:white;
+}
+
+body.page-root-perfiles #main-content .row{
+    background-color: transparent;
+}
+
 #main-content .row{
     background-color: white;
+}
+
+#main-content .well {
+    background-color: transparent;
+    border-color: transparent;
 }
 
 /* ----- header region --------------- */
 .header { padding-top:0px; background-color: black;color: white; position:fixed;z-index: 10;width:100%;}
 .header-content { clear:both; }
-.header .nav > li > a {padding: 0px;color:white;}
+.header .nav > li > a {padding: 0px;color:white;font-size:80%;}
 .header .nav > li > a:hover {padding: 0px;color:lightgray; background-color: black;}
 /* menu-fijo */
 .header-content .block-menu > ul > li {float: left; padding-left: 15px;}
@@ -31,6 +53,10 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
     padding-top: 25px;
     z-index: 9;
     width:100%;
+}
+
+.noticias-view{
+    display:inline-block;
 }
 
 /* ----menu perfiles----- */
@@ -52,7 +78,7 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
 .perfiles ul.menu > li.leaf > a{
     color: whitesmoke;
     text-align: right;
-    font-size:140%; 
+    font-size:120%; 
     padding-top: 55px;
 }
 
@@ -60,8 +86,14 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
     margin-top: 15px;
 }
 
-#sidebar-first .nav > li > a {
-    color:#BE1622;
+
+body.page-root-perfiles #sidebar-first .nav > li > a {
+    color:white;
+    border-bottom-color: white;
+}
+
+body.page-root-perfiles .nav > li > a:hover, .nav > li > a:focus{
+    background-color: transparent;
 }
 
 #sidebar-first .nav > li > a {
@@ -72,7 +104,8 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
 }
 
 #sidebar-first .nav > li > a:hover {
-    background-color: #DDD;}
+    color: #DDD;
+}
 
 .perfiles .nav > li > a:hover {
     background-color: #BE1622;
@@ -95,23 +128,25 @@ ol.breadcrumb{
     margin-top: 130px;
     background-color: initial;
     float:right;
+    font-size: 70%;
 }
 
 ol.breadcrumb li a{
-    color:#BE1622;
+    color:white;
 }
 
 .breadcrumb > .active {
-    color:#BE1622;
-    font-weight: bold;
+    color:white;
 }
+
 #main-content-frontpage{
     padding-top: 20px;
 }
 
 .main-top{
-font-size: 12px;
-width: 130px;
+font-size: 100%;
+font-stretch: extra-condensed;
+width: 150px;
 position: fixed;
 right: 0px;
 top: 185px;
@@ -120,21 +155,21 @@ transition: right 0.15s ease-out 0s;
 }
 
 .main-top a {
-    width:100px;
-    height: 55px;
-    line-height: 51px;
+    width:135px;
+    height: 75px;
+    line-height: 75px;
     color: whitesmoke;
     display: block;
-    background: url('images/pestanya2.png') no-repeat scroll 0px -58px transparent;
+    background: url('images/pestanya.png') no-repeat scroll 0px -76px transparent;
     margin-bottom: 4px;
-    padding-left: 22px;
+    padding-left: 20px;
     float: right;
     transition: width 0.2s ease-out 0s;
 }
 
 .main-top a:hover {
     background-position: 0px 0px;
-    width: 130px;
+    width: 150px;
     text-decoration: none;
 }
 

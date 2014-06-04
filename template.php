@@ -20,7 +20,7 @@ function ausias_drupal_preprocess_html(&$vars) {
   if(!empty($menuParent) && $menuParent['link_path'] != ''){
      $vars['classes_array'][] = $menuParent['title'];
   } else {
-      $vars['classes_array'][] = menu_get_active_title();
+      $vars['classes_array'][] = menu_get_active_title()." "."page-root-perfiles";
   }  
     
 }
