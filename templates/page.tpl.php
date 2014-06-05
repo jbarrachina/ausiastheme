@@ -82,8 +82,14 @@
             <div id="main-upper" class="row-fluid main-upper"> <?php print render($page['main_upper']); ?> </div>
           </div>  
         <?php endif; ?>
+        <div class="row">
+                <?php if ($title): ?>
+                            <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
+                <?php endif; ?>
+        </div>
         <div id="main-content<?php if (($is_front)): print '-frontpage'; 
                               endif; ?>" class="main-content">
+            
             <div class="row">    
             <?php if ($page['sidebar_first']): ?>
                 <div id="sidebar-first" class="sidebar col-md-3 site-sidebar-first">
@@ -101,9 +107,7 @@
                             <div id="highlighted" class="clearfix"><?php print render($page['highlighted']); ?></div>
                         <?php endif; ?>
                         <?php print render($title_prefix); ?>
-                        <?php if ($title): ?>
-                            <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
-                        <?php endif; ?>
+                        
                         <?php print render($title_suffix); ?>
                         <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
                             <div class="tabs"> <?php print render($tabs); ?> </div>

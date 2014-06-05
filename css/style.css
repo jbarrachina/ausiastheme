@@ -5,7 +5,7 @@
 
 /*cuerpo de la página*/
 body {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 
@@ -17,7 +17,24 @@ body.page-node-{
 
 body.Alumnado {
     background-image: url('images/morado.jpg');
+    background-attachment: fixed;
 }
+
+body.Estudiar {
+    background-image: url('images/verde.jpg');
+    background-attachment: fixed;
+}
+
+body.Profesorado {
+    background-image: url('images/verdeclaro.jpg');
+    background-attachment: fixed;
+}
+
+body.Empresas {
+    background-image: url('images/marron.jpg');
+    background-attachment: fixed;
+}
+
 
 body.page-root-perfiles{
     color:white;
@@ -27,6 +44,17 @@ body.page-root-perfiles #main-content .row{
     background-color: transparent;
 }
 
+h1#page-title{
+    font-size: 250%;
+    color: white;
+    margin-top: -25px;
+    margin-left: 30px
+}
+
+#main-content{
+    padding-top: 0px;
+}
+
 #main-content .row{
     background-color: white;
 }
@@ -34,6 +62,10 @@ body.page-root-perfiles #main-content .row{
 #main-content .well {
     background-color: transparent;
     border-color: transparent;
+}
+
+.region-content{
+    padding-top: 20px;
 }
 
 /* ----- header region --------------- */
@@ -62,7 +94,7 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
 /* ----menu perfiles----- */
 
 .perfiles ul.menu{
-        background-color:#BE1622; 
+     background-color:#BE1622; 
 }
 
 .perfiles ul.menu > li.leaf{
@@ -83,7 +115,7 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
 }
 
 .region-sidebar-first{
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 
@@ -101,10 +133,13 @@ body.page-root-perfiles .nav > li > a:hover, .nav > li > a:focus{
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #BE1622;
+    font-size: 100%;
+    padding-left: 0px;
+    padding-top: 0px;
 }
 
 #sidebar-first .nav > li > a:hover {
-    color: #DDD;
+    background-color: transparent;
 }
 
 .perfiles .nav > li > a:hover {
@@ -117,12 +152,10 @@ body.page-root-perfiles .nav > li > a:hover, .nav > li > a:focus{
     z-index: 9;
     width: 100%;
     background-color:#BE1622; 
-    opacity: 0.85;
+    opacity: 0.80;
 }
 
-#main-content{
-    padding-top: 0px;
-}
+
 
 ol.breadcrumb{
     margin-top: 130px;
@@ -146,7 +179,7 @@ ol.breadcrumb li a{
 .main-top{
 font-size: 100%;
 font-stretch: extra-condensed;
-width: 150px;
+width: 155px;
 position: fixed;
 right: 0px;
 top: 185px;
@@ -155,12 +188,12 @@ transition: right 0.15s ease-out 0s;
 }
 
 .main-top a {
-    width:135px;
+    width:145px;
     height: 75px;
     line-height: 75px;
-    color: whitesmoke;
+    color: darkred;
     display: block;
-    background: url('images/pestanya.png') no-repeat scroll 0px -76px transparent;
+    background: url('images/cta.png') no-repeat scroll 0px -76px transparent;
     margin-bottom: 4px;
     padding-left: 20px;
     float: right;
@@ -169,7 +202,7 @@ transition: right 0.15s ease-out 0s;
 
 .main-top a:hover {
     background-position: 0px 0px;
-    width: 150px;
+    width: 155px;
     text-decoration: none;
 }
 
