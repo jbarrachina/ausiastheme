@@ -54,12 +54,12 @@
 <!-- carrusel -->
 <?php if ($page['main_carrusel']): ?>
     <div id="carrusel" class="clearfix banner" role="banner">
-            <div class="row">
-                <div class="col-md-12">
+            <!-- <div class="row">
+                <div class="col-md-12"> -->
                         <div id="main_carrusel" class="row-fluid carrusel"><?php print render($page['main_carrusel']); ?></div>
                         <!-- /#header-content -->
-                </div>
-            </div>
+            <!--     </div>
+            </div> -->
     </div>
 <?php endif; ?>
 <!-- carrusel  -->    
@@ -87,10 +87,11 @@
                             <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
                 <?php endif; ?>
         </div>
+        <dir class="row">
         <div id="main-content<?php if (($is_front)): print '-frontpage'; 
                               endif; ?>" class="main-content">
             
-            <div class="row">    
+              
             <?php if ($page['sidebar_first']): ?>
                 <div id="sidebar-first" class="sidebar col-md-3 site-sidebar-first">
                     <div class="row-fluid"><?php print render($page['sidebar_first']); ?></div>
@@ -149,10 +150,11 @@
                 </div>
                 <!-- /#sidebar-second -->
             <?php endif; ?>
-        </div>
-      </div>    
+        
+        </div>  <!-- main-content -->
+    </div>
       <?php if ($page['main_lower']): ?>
-          <div id="main-lower" class="row-fluid main-lower"> <?php print render($page['main_lower']); ?> </div>
+          <section id="main-lower" class="row-fluid main-lower panel-pane"> <?php print render($page['main_lower']); ?> </section>
       <?php endif; ?>
       <?php if ($page['main_bottom']): ?>
           <div id="main-bottom" class="row-fluid main-bottom"> <?php print render($page['main_bottom']); ?> </div>
