@@ -6,7 +6,7 @@
 /*cuerpo de la página*/
 body {
     font-size: 19px;
-    background-color: lightgoldenrodyellow;
+    background-color: #61BCB2;
 }
 
 
@@ -37,18 +37,28 @@ body.Empresas {
 }
 
 
+
 body.page-root-perfiles{
     color:white;
 }
 
-body.page-root-perfiles #main-content .row{
-    background-color: transparent;
-}
+
 
 .mp-Alumnado{
   background-color: orange;
   background-image: url('images/morado.jpg');
   background-attachment: fixed;
+}
+
+a {
+    color: black;
+    font-size: 90%;
+}
+
+a:hover{
+    color: darkslategrey;
+    text-decoration: none;
+    
 }
 
 h1#page-title{
@@ -62,8 +72,26 @@ h1#page-title{
     padding-top: 0px;
 }
 
-body.not-front #main-content {
+
+body.not-front .cuerpo {
     background-color: white;
+}
+
+body.page-root-perfiles .cuerpo {
+    background-color: transparent;
+}
+
+body.node-type-article .cuerpo{
+    background-color: #61BCB2;
+    color:darkslateblue;
+    padding: 25px;
+}
+
+.cuerpo{
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  padding-top:20px;
 }
 
 #main-content .well {
@@ -71,8 +99,13 @@ body.not-front #main-content {
     border-color: transparent;
 }
 
+.mc-content{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .region-content{
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 /* ----- header region --------------- */
@@ -103,16 +136,17 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
     position: relative;
     width: 200px;
     text-align: left;
-    margin: 20px auto;
+    margin: 0px auto;
     left: 0%;
     top: -50px;
 }
 
 #Noticias{
-    background-color: lightgrey;
+    background-color: #61BCB2;
     position: relative;
     overflow: hidden;
     padding-bottom: 10px;
+    color: darkslateblue;
 }
 
 .noticias-view{
@@ -143,7 +177,8 @@ ul.language-switcher-locale-url li {float: right;margin-left: 6px;margin-bottom:
 }
 
 #sidebar-first{
-    padding-left: 0px;
+    padding-left: 10px;
+    top: -20px;
 }
 
 
@@ -168,8 +203,6 @@ body.page-root-perfiles .nav > li > a:hover, .nav > li > a:focus{
     border-bottom-width: 1px;
     border-bottom-color: #BE1622;
     font-size: 100%;
-    padding-left: 0px;
-    padding-top: 0px;
 }
 
 #sidebar-first .nav > li > a:hover {
@@ -252,17 +285,37 @@ transition: right 0.15s ease-out 0s;
 }
 
 .separador{
-    background-image: url('images/bg.gif');
+    padding-bottom: 30px;
+    background-image: url('images/bg_ausias_mini.gif');
     color: brown;
-    padding: 1em;
 }
 
+.separator img{
+    padding: 0 25px;
 
+}
+
+.sep-derecha .imagen-page{
+    float:right;
+}
+
+.sep-izquierdo .imagen-page{
+    float:left;
+}
 
 #footer{
     background-color: black;
     text-align: center;
     color: white;
+    font-size:80%;
+}
+
+#footer a{
+    color:whitesmoke;
+}
+
+#footer a:hover{
+    color:white;
 }
 
 img.izquierda{
@@ -278,7 +331,7 @@ img.derecha{
 @media (min-width: 1199px) {
 .row {
     max-width: 1170px;
-    witdh: 100%;
+    width: 100%;
     margin: 0px auto;
 }
 }

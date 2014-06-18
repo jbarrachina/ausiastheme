@@ -66,7 +66,7 @@
 
 <div id="main" class="clearfix main" role="main">
     
-    <div class="container">
+<!--   <div class="container">  -->
         <?php if (!($is_front) && ($breadcrumb)): ?>
           <div class="row">
             <div id="breadcrumb"><?php print $breadcrumb; ?></div>
@@ -82,15 +82,16 @@
             <div id="main-upper" class="row-fluid main-upper"> <?php print render($page['main_upper']); ?> </div>
           </div>  
         <?php endif; ?>
-        <div class="row">
-                <?php if ($title): ?>
-                            <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
-                <?php endif; ?>
-        </div>
-        <dir class="row">
-        <div id="main-content<?php if (($is_front)): print '-frontpage'; 
-                              endif; ?>" class="main-content">
-            
+        
+        <?php if (!($is_front)): print '<div class="row">'; endif; ?> 
+        
+            <?php if ($title): ?>
+           <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
+        <?php endif; ?>
+        
+        <?php if (!($is_front)): print '<div class="cuerpo">'; endif; ?>   
+           
+        <div id="main-content<?php if (($is_front)): print '-frontpage'; endif; ?>" class="main-content">          
               
             <?php if ($page['sidebar_first']): ?>
                 <div id="sidebar-first" class="sidebar col-md-3 site-sidebar-first">
@@ -132,7 +133,9 @@
                         <div id="content-upper" class="row-fluid content-upper"> <?php print render($page['content_upper']); ?> </div>
                     <?php endif; ?>
                     <?php if (($page['content']) || ($feed_icons)): ?>
-                        <div id="content-body" class="row-fluid content-body"> <?php print render($page['content']); ?> <?php print $feed_icons; ?> </div>
+                        
+                        <div id="content-body" class="row-fluid content-body">  <?php print render($page['content']); ?> <?php print $feed_icons; ?> </div>
+                        
                     <?php endif; ?>
                     <?php if ($page['content_lower']): ?>
                         <div id="content-lower" class="row-fluid content-lower"> <?php print render($page['content_lower']); ?> </div>
@@ -150,16 +153,16 @@
                 </div>
                 <!-- /#sidebar-second -->
             <?php endif; ?>
-        
-        </div>  <!-- main-content -->
-    </div>
+        <?php if (!($is_front)): print '</div></div>'; endif; ?> 
+       </div>  <!--  main-content -->
+  <!--  </div> -->
       <?php if ($page['main_lower']): ?>
           <section id="main-lower" class="row-fluid main-lower panel-pane"> <?php print render($page['main_lower']); ?> </section>
       <?php endif; ?>
       <?php if ($page['main_bottom']): ?>
           <div id="main-bottom" class="row-fluid main-bottom"> <?php print render($page['main_bottom']); ?> </div>
       <?php endif; ?>
-    </div>
+    
 </div>
 <!-- /#main, /#main-wrapper -->
 <?php if ($page['footer']): ?>
