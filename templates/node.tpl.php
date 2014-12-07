@@ -94,11 +94,17 @@
       hide($content['links']);
       print '<div class="imagen-page">';
       /* @var $content type */
-      if($field_imagen): 
-         print render($content['field_imagen']); //imagen
-      endif;  
+      if ($type=='article'):
+         print render($content['field_image']); //imagen
+      endif;
+      if ($type=='page'):
+         print render($content['field_image_page']); //imagen 
+      endif;
       print "</div>";
-      print render($content['body']); //sólo muestra el cuerpo de la página, para evitar el enlace al cambio de idioma
+      if ($title): ?>
+      <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
+        <?php endif; ?>
+      <?php print render($content['body']); //sólo muestra el cuerpo de la página, para evitar el enlace al cambio de idioma
     ?>
   </div>
   <?php //print render($content['links']); ?> <?php //print render($content['comments']); ?> 

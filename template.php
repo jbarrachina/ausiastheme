@@ -10,7 +10,7 @@
  *  Queremos poner como clase en body el título de la página padre
  */
 
-function ausias_drupal_preprocess_html(&$vars) {
+function ausias_clean_preprocess_html(&$vars) {
   $menuParent = menu_get_active_trail();
   //get rid of the last item in the array as it is the current page
   $menuParentPop = array_pop($menuParent);

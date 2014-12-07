@@ -1,0 +1,53 @@
+.block .agenda-block {
+    margin-left: 10px;
+}
+
+.block .agenda-block p {
+    margin-left: 20px;  /* Valor original 10px Cambiado el 3/12/2014 */
+    padding: 0;
+    font-weight: bold;
+}
+
+.block .agenda-block ol { 
+    list-style-type: none; 
+    margin: 0 0 1em 1em; 
+    padding: 0; 
+ }
+
+ .block .agenda-block ol li {  
+    padding: 5px 10px; 
+    margin:15px 30px;    /* Valores originales 5px 20px; Cambiados el 3/12/2014 */
+    color: white; 
+    font-size: 90%; 
+    background-image: none; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.block .agenda-block ol li .calendar_title { cursor: pointer; }
+.block .agenda-block .moreinfo { display: none; list-style-type: none; margin: .2em 0; padding: .3em 0; }
+.block .agenda-block .moreinfo,
+.block .agenda-block .moreinfo p { line-height: 1.4em; }
+.block .agenda-block .moreinfo em { font-style: normal; text-decoration: underline; }
+.block .agenda-block .moreinfo a { color: white; }
+.block .agenda-block .moreinfo li { list-style-type: none; list-style-image: none; background-image: none; margin: .6em 0 0 0; padding: 0; font-size: 100%; }
+
+.agenda-block .cal_0 { background-color: #BE1622; }
+.agenda-block .cal_1 { background-color: #BE1622; }
+.agenda-block .cal_2 { background-color: #FFBF00; }
+.agenda-block .cal_3 { background-color: #80FF00; }
+.agenda-block .cal_4 { background-color: #00FFFF; }
+.agenda-block .cal_5 { background-color: #FA58D0; }
+.agenda-block .cal_6 { background-color: #2E2E2E; }
+.agenda-block .cal_7 { background-color: #9F81F7; }
+.agenda-block .cal_8 { background-color: #0B2161; }
+.agenda-block .cal_9 { background-color: #61380B; }
+.agenda-block .cal_10 { background-color: #61210B; }
+.agenda-block .cal_11 { background-color: #610B0B; }
+
+#agenda-debug-log { max-height: 500px; overflow: auto; border: 2px solid #666; margin-bottom: 2em; }
+#agenda-debug-log ul { list-style: none; margin: 0; padding: 0; }
+#agenda-debug-log ul li { margin: 0; padding: .5em; list-style: none; background-color: #ddd; }
+#agenda-debug-log ul li:nth-child(odd) { background-color: white; }
+#agenda-debug-log ul li pre { overflow: auto; }
+/*#agenda-debug-table { max-width: 100%; max-height: 500px; border: 2px solid #666; overflow: auto; }*/
